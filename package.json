@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon --inspect index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -37,7 +37,7 @@
     "multer-s3": "^3.0.1",
     "passport": "^0.7.0"
   },
-  "devDependencies": {  
+  "devDependencies": {
     "nodemon": "^3.1.7"
   }
 }
