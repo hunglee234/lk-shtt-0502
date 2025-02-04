@@ -1,0 +1,79 @@
+<!-- <html>
+  <head>
+    <meta
+      name="google-signin-client_id"
+      content="463601735865-4dq9fcvi4eg0ti3lfv1q19f2tko5o3pd.apps.googleusercontent.com"
+    />
+  </head>
+  <body>
+    <div id="my-signin2"></div>
+    <script>
+      function onSuccess(googleUser) {
+        console.log("Logged in as: " + googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render("my-signin2", {
+          scope: "profile email",
+          width: 240,
+          height: 50,
+          longtitle: true,
+          theme: "dark",
+          onsuccess: onSuccess,
+          onfailure: onFailure,
+        });
+      }
+    </script>
+
+    <script
+      src="https://apis.google.com/js/platform.js?onload=renderButton"
+      async
+      defer
+    ></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with Google</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        text-align: center;
+      }
+      .login-btn {
+        background-color: #4285f4;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-btn:hover {
+        background-color: #357ae8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login with Google</h1>
+      <button
+        class="login-btn"
+        onclick="window.location.href='http://localhost:3009/google/auth'"
+      >
+        Login with Google
+      </button>
+    </div>
+  </body>
+</html>
