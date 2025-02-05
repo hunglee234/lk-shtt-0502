@@ -15,7 +15,7 @@ const managerRoutes = require("./routes/client/managerRoutes");
 const userRoutes = require("./routes/user/routesUser");
 // Middleware Passport
 app.use(passport.initialize());
-
+// alo 123
 app.use("/", authRoutes);
 
 // Route dành cho admin
