@@ -1,0 +1,7 @@
+steps:
+  # Triển khai lên App Engine
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy", "--quiet"]
+
+options:
+  logging: CLOUD_LOGGING_ONLY
